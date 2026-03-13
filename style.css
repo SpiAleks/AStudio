@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+}
+
+.hero {
+    text-align: center;
+}
+
+.box {
+    transition: 0.2s;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
