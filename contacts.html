@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AStudio | Контакты</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar is-light" role="navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <strong>AStudio</strong>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index.html#about">О сервисе</a>
+                    <a class="navbar-item" href="index.html#services">Услуги</a>
+                    <a class="navbar-item" href="index.html#reviews">Отзывы</a>
+                    <a class="navbar-item" href="faq.html">FAQ</a>
+                    <a class="navbar-item is-active" href="contacts.html">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-primary is-small">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1">Свяжитесь с нами</h1>
+                <p class="subtitle is-4">Ответим на все вопросы и обсудим ваш проект</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                
+                <div class="column is-7">
+                    <div class="box">
+                        <h2 class="title is-3">Напишите нам</h2>
+                        
+                        <form id="contactForm">
+                            <div class="field">
+                                <label class="label">Имя <span class="has-text-danger">*</span></label>
+                                <div class="control has-icons-left">
+                                    <input class="input" type="text" placeholder="Анна" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Email <span class="has-text-danger">*</span></label>
+                                <div class="control has-icons-left">
+                                    <input class="input" type="email" placeholder="anna@example.com" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Тема обращения</label>
+                                <div class="control">
+                                    <div class="select is-fullwidth">
+                                        <select>
+                                            <option>Выберите тему</option>
+                                            <option>Заказать дизайн</option>
+                                            <option>Вопрос по услугам</option>
+                                            <option>Сотрудничество</option>
+                                            <option>Другое</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Сообщение <span class="has-text-danger">*</span></label>
+                                <div class="control">
+                                    <textarea class="textarea" placeholder="Расскажите о вашем проекте..." rows="5" required></textarea>
+                                </div>
+                            </div>
+
+
+                            <div class="field">
+                                <div class="control">
+                                    <label class="checkbox">
+                                        <input type="checkbox" required>
+                                        Я согласен на <a href="#">обработку персональных данных</a>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="field is-grouped">
+                                <div class="control">
+                                    <button class="button is-primary" type="submit">
+                                        <span class="icon">
+                                            <i class="fas fa-paper-plane"></i>
+                                        </span>
+                                        <span>Отправить сообщение</span>
+                                    </button>
+                                </div>
+                                <div class="control">
+                                    <button class="button is-light" type="reset">Очистить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="column is-5">
+                    <div class="box">
+                        <h2 class="title is-3">Контакты</h2>
+                        
+                        <div class="content">
+                            <p>
+                                <span class="icon has-text-primary">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </span>
+                                <strong>Офис:</strong> Москва, ул. Тверская, 15
+                            </p>
+                            <p>
+                                <span class="icon has-text-primary">
+                                    <i class="fas fa-phone"></i>
+                                </span>
+                                <strong>Телефон:</strong> +7 (999) 123-45-67
+                            </p>
+                            <p>
+                                <span class="icon has-text-primary">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                                <strong>Email:</strong> hello@astudio.com
+                            </p>
+                            <p>
+                                <span class="icon has-text-primary">
+                                    <i class="fas fa-clock"></i>
+                                </span>
+                                <strong>Режим работы:</strong> Пн-Пт, 10:00 - 19:00
+                            </p>
+                        </div>
+
+                        <hr>
+
+                        <h3 class="title is-5">Мы на карте</h3>
+                        <div style="position:relative;overflow:hidden;height:250px;border-radius:8px;">
+                            <iframe src="https://yandex.ru/map-widget/v1/?ll=37.617494%2C55.750541&z=12&pt=37.617494%2C55.750541&l=map" 
+                                    width="100%" 
+                                    height="250" 
+                                    frameborder="0" 
+                                    allowfullscreen="true">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>AStudio</strong> — сервис графического дизайна
+            </p>
+            <p>
+                <a href="mailto:hello@astudio.com">hello@astudio.com</a>
+            </p>
+            <p>
+                <a href="#" class="mx-2"><i class="fab fa-instagram fa-xl"></i></a>
+                <a href="#" class="mx-2"><i class="fab fa-behance fa-xl"></i></a>
+                <a href="#" class="mx-2"><i class="fab fa-dribbble fa-xl"></i></a>
+            </p>
+            <p>
+                <a href="index.html">Главная</a> | 
+                <a href="faq.html">FAQ</a> | 
+                <a href="contacts.html">Контакты</a>
+            </p>
+            <p class="is-size-7">
+                © 2025 AStudio. Все права защищены.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.querySelector('.navbar-menu');
+            
+            if (burger && menu) {
+                burger.addEventListener('click', () => {
+                    burger.classList.toggle('is-active');
+                    menu.classList.toggle('is-active');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

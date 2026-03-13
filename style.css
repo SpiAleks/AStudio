@@ -13,3 +13,43 @@ body {
 .box:hover {
     transform: translateY(-5px);
 }
+
+body {
+    font-family: sans-serif;
+}
+
+.hero {
+    text-align: center;
+}
+
+.box {
+    transition: 0.2s;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.navbar-item.is-active {
+    background-color: #e5e5e5 !important;
+    color: #00d1b2 !important;
+    font-weight: 600;
+}
+
+.footer a {
+    transition: color 0.2s;
+}
+.footer a:hover {
+    color: #00d1b2 !important;
+}
+
+@media (max-width: 768px) {
+    .columns .column {
+        margin-bottom: 1rem;
+    }
+}
+
+.input:focus, .textarea:focus, .select select:focus {
+    border-color: #00d1b2 !important;
+    box-shadow: 0 0 0 0.125em rgba(0, 209, 178, 0.25) !important;
+}

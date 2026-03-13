@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AStudio | FAQ</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .accordion-item {
+            margin-bottom: 1rem;
+            border: 1px solid #dbdbdb;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .accordion-header {
+            background-color: #f5f5f5;
+            padding: 1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+        .accordion-header:hover {
+            background-color: #e5e5e5;
+        }
+        .accordion-content {
+            max-height: 0;
+            padding: 0 1rem;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            background-color: white;
+        }
+        .accordion-content.is-open {
+            max-height: 300px;
+            padding: 1rem;
+        }
+        .accordion-header i {
+            transition: transform 0.3s;
+        }
+        .accordion-header.is-open i {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar is-light" role="navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <strong>AStudio</strong>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index.html#about">О сервисе</a>
+                    <a class="navbar-item" href="index.html#services">Услуги</a>
+                    <a class="navbar-item" href="index.html#reviews">Отзывы</a>
+                    <a class="navbar-item is-active" href="faq.html">FAQ</a>
+                    <a class="navbar-item" href="contacts.html">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-primary is-small">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1">Часто задаваемые вопросы</h1>
+                <p class="subtitle is-4">Всё, что вы хотели знать о работе AStudio</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    
+                    <div class="box">
+                        <h2 class="title is-3 has-text-centered mb-5">FAQ</h2>
+                        
+                        <div class="accordion" id="faqAccordion">
+                            
+                            <div class="accordion-item">
+                                <div class="accordion-header" onclick="toggleAccordion(this)">
+                                    <span>Как начать пользоваться сервисом?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Просто зарегистрируйтесь на сайте, подтвердите email, и вы сразу сможете заказывать дизайн-услуги. Для новых клиентов действует пробный период с ограниченным функционалом.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <div class="accordion-header" onclick="toggleAccordion(this)">
+                                    <span>Сколько стоит разработка логотипа?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Стоимость зависит от сложности. Базовый пакет "Старт" — от 5000 руб., пакет "Бизнес" с проработкой концепции — от 15000 руб. Точную цену называем после брифа.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <div class="accordion-header" onclick="toggleAccordion(this)">
+                                    <span>Какие сроки выполнения заказа?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Логотип: 3-5 рабочих дней. Фирменный стиль: 7-10 дней. Дизайн сайта: от 14 дней (зависит от количества страниц). Возможно срочное выполнение за доп. плату.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <div class="accordion-header" onclick="toggleAccordion(this)">
+                                    <span>Можно ли заказать дизайн, если я не в Москве?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Конечно! Мы работаем онлайн с клиентами по всему миру. Все общение, согласования и передача файлов происходят дистанционно.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <div class="accordion-header" onclick="toggleAccordion(this)">
+                                    <span>Предоставляете ли вы исходные файлы?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Да, после полной оплаты вы получаете все исходники в редактируемых форматах (AI, PSD, FIG, CDR) и все необходимые форматы для печати и веба.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <div class="accordion-header" onclick="toggleAccordion(this)">
+                                    <span>Есть ли гарантия на ваши услуги?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Мы гарантируем качество и вносим правки бесплатно, пока результат не устроит вас. Количество раундов правок зависит от выбранного пакета.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="has-text-centered mt-5">
+                            <p>Не нашли ответ на свой вопрос?</p>
+                            <a href="contacts.html" class="button is-primary mt-3">
+                                <span>Связаться с нами</span>
+                                <span class="icon"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p><strong>AStudio</strong> — сервис графического дизайна</p>
+            <p><a href="mailto:hello@astudio.com">hello@astudio.com</a></p>
+            <p>
+                <a href="#" class="mx-2"><i class="fab fa-instagram fa-xl"></i></a>
+                <a href="#" class="mx-2"><i class="fab fa-behance fa-xl"></i></a>
+                <a href="#" class="mx-2"><i class="fab fa-dribbble fa-xl"></i></a>
+            </p>
+            <p>
+                <a href="index.html">Главная</a> | 
+                <a href="faq.html">FAQ</a> | 
+                <a href="contacts.html">Контакты</a>
+            </p>
+            <p class="is-size-7">© 2025 AStudio. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAccordion(header) {
+            const content = header.nextElementSibling;
+            const isOpen = content.classList.contains('is-open');
+            
+            document.querySelectorAll('.accordion-content').forEach(c => {
+                c.classList.remove('is-open');
+            });
+            document.querySelectorAll('.accordion-header').forEach(h => {
+                h.classList.remove('is-open');
+            });
+            
+            if (!isOpen) {
+                content.classList.add('is-open');
+                header.classList.add('is-open');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.querySelector('.navbar-menu');
+            
+            if (burger && menu) {
+                burger.addEventListener('click', () => {
+                    burger.classList.toggle('is-active');
+                    menu.classList.toggle('is-active');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
