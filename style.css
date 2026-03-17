@@ -53,3 +53,24 @@ body {
     border-color: #00d1b2 !important;
     box-shadow: 0 0 0 0.125em rgba(0, 209, 178, 0.25) !important;
 }
+
+.input.is-danger, .textarea.is-danger {
+    border-color: #f14668;
+    box-shadow: 0 0 0 0.125em rgba(241, 70, 104, 0.25);
+}
+
+.help.is-danger {
+    color: #f14668;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+.input.is-danger {
+    animation: shake 0.3s ease-in-out;
+}
